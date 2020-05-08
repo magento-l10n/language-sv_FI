@@ -2218,6 +2218,7 @@ Modified,Ändrad
 "Images (%1)","Bilder (%1)"
 "Storage Root",Lagringsrot
 "You deleted the block.","Du har tagit bort blocket."
+"We can't find a block to delete.","Vi kan inte hitta ett block att ta bort."
 "This block no longer exists.","Det här blocket finns inte längre."
 "Edit Block","Redigera block"
 "New Block","Nytt block"
@@ -2231,12 +2232,34 @@ Blocks,Block
 "New Page","Ny Sida"
 Pages,Sidor
 "Something went wrong while saving the page.","Något gick fel när sidan skulle sparas."
+"A total of %1 record(s) have been disabled.","Totalt %1 post(er) har inaktiverats."
+"A total of %1 record(s) have been enabled.","Totalt %1 post(er) har aktiverats."
 "Page Title",Sidrubrik
+"To apply changes you should fill in hidden required ""%1"" field","För att tillämpa ändringar bör du fylla i dolda obligatoriska ""%1"" fältet"
 "You saved the page.","Du har sparat sidan."
+"Directory %1 is not under storage root path.","Katalogen ""%1"" är inte under lagringsutrymmets rotsökväg."
+"The directory %1 is not writable by server.","Katalogen ""%1"" är inte skrivbar på servern."
+"Make sure that static block content does not reference the block itself.","Se till att statiskt blockinnehåll inte refererar till själva blocket."
+"CMS Block with id ""%1"" does not exist.","CMS-block med id ""%1"" finns inte."
 "Enabled by Default","Aktiverad som standard"
 "Disabled by Default","Avaktiverad som standard"
+"Disabled Completely","Totalt inaktiverad"
+"This identifier is reserved for ""CMS No Route Page"" in configuration.","Denna identifierare är reserverad för ""CMS No Route Page"" i konfigurationen."
+"This identifier is reserved for ""CMS Home Page"" in configuration.","Denna identifierare är reserverad för ""CMS Hemsida"" i konfiguration."
+"This identifier is reserved for ""CMS No Cookies Page"" in configuration.","Denna identifierare är reserverad för ""CMS No Cookies Page"" i konfigurationen."
 "Could not save the page: %1","Kunde inte spara sida: %1"
+"CMS Page with id ""%1"" does not exist.","CMS-sida med id ""%1"" finns inte."
 "Could not delete the page: %1","Kunde inte ta bort sida: %1"
+"A block identifier with the same properties already exists in the selected store.","En block-identifierare med samma egenskaper finns redan i den valda butiken."
+"The page URL key contains capital letters or disallowed symbols.","Sidans URL-nyckel innehåller stora bokstäver eller otillåtna symboler/tecken."
+"The page URL key cannot be made of only numbers.","Sidans URL-nyckel får inte bestå av endast siffror."
+"Please rename the folder using only letters, numbers, underscores and dashes.","Vänligen döpa om mappen och använd endast bokstäver, siffror, understreck och bindestreck."
+"We found a directory with the same name. Please try another folder name.","Vi hittade en katalog med samma namn. Försök med ett annat mappnamn."
+"We cannot create a new directory.","Vi kan inte skapa en ny katalog."
+"We cannot delete directory %1.","Vi kan inte ta bort katalogen ""%1""."
+"We can't upload the file right now.","Vi kan inte ladda upp filen just nu."
+"We can't delete root directory %1 right now.","Vi kan inte ta bort rotkatalogen ""%1"" just nu."
+"Privacy and Cookie Policy","Integritets- och cookiepolicy"
 "Error message",Felmeddelande
 View,Visa
 "No files found","Hittade inga filer"
@@ -4043,6 +4066,7 @@ TRUE,Sann
 "If %1 of these conditions are %2:","Om %1 av dessa villkor är %2:"
 "Credit Memos",Kreditnotor
 Invoices,Fakturor
+"We can't get the order instance right now.","Vi kan hämta orderinstansen just nu."
 "Create New Order","Skapa ny beställning"
 "Save Order Address","Spara beställningsadress"
 "Edit Order %1 %2 Address","Redigera beställning %1 %2 adress"
@@ -4081,6 +4105,7 @@ Invoices,Fakturor
 "Refund Shipping (Incl. Tax)","Återbetala frakt (inkl moms)"
 "Refund Shipping (Excl. Tax)","Återbetala frakt (exkl moms)"
 "Refund Shipping","Återbetala frakt"
+"Update Qty's","Uppdatera antal"
 Refund,Återbetala
 "Refund Offline","Återbetalning Offline"
 "Paid Amount","Betalat belopp"
@@ -4093,6 +4118,7 @@ Refund,Återbetala
 "Send Email","Skicka E-post"
 "Are you sure you want to send a credit memo email to customer?","Är du säker du vill mejla kreditnotan till kunden?"
 "The credit memo email was sent.","E-brevet med kreditnotan har skickats."
+"The credit memo email wasn't sent.","E-postmeddelandet med kreditnotan skickades inte."
 "Credit Memo #%1 | %3 | %2 (%4)","Kreditnotan #%1 | %3 | %2 (%4)"
 "Total Refund","Återbetala hela beloppet"
 "New Invoice and Shipment for Order #%1","Ny faktura och leverans för beställning #%1"
@@ -4103,6 +4129,7 @@ Refund,Återbetala
 "Credit Memo",Kreditmemo
 Capture,Fakturera
 "The invoice email was sent.","Ett mejl med fakturan har skickats."
+"The invoice email wasn't sent.","E-postmeddelandet med faktura skickades inte."
 "Invoice #%1 | %2 | %4 (%3)","Faktura #%1 | %2 | %4 (%3)"
 "Invalid parent block for this block","Ogiltig överordnat block för detta block"
 "Order Statuses",Beställningsstatus
@@ -4155,6 +4182,8 @@ Shipments,Sändelser
 "Order Shipments",Beställningsleveranser
 Transactions,Transaktioner
 "Order View",Beställningsvy
+"Show Actual Values","Visa faktiska värden"
+"New Order RSS","RSS för nya ordrar"
 "Discount (%1)","Rabatt (%1)"
 "Transaction # %1 | %2","Transaktion # %1 | %2"
 Value,Värde
@@ -4173,6 +4202,7 @@ Unassign,"Ta bort tilldelning"
 "You updated the order address.","Du uppdaterade beställningsadressen."
 "You canceled the order.","Du avbröt beställningen."
 """%1"" coupon code was not applied. Do not apply discount is selected for item(s)","Rabattkod ”%1” tillämpades inte. Använd-inte-rabatten är valt för artiklarna"
+"""%1"" coupon code is not valid.","Kupongkoden ""%1"" är inte giltig."
 "The coupon code has been accepted.","Rabattkoden har applicerats."
 "New Order","Ny beställning"
 "Cannot add new comment.","Kan inte lägga till ny kommentar."
@@ -4231,11 +4261,15 @@ Unassign,"Ta bort tilldelning"
 "Shipping Address: ","Leveransadress: "
 "Billing Address: ","Faktureringsadress: "
 "Please specify order items.","Ange beställningens artiklar."
+"This payment method is not available.","Denna betalningsmetod är inte tillgänglig."
+"Validation is failed.","Validering misslyckades."
+"We cannot cancel this order.","Vi kan inte annullera denna beställning."
 "Please enter the company.","Ange företagsnamnet."
 "Please enter the fax number.","Ange faxnummer."
 "Unknown State","Okänt tillstånd"
 "Could not save the creditmemo comment.","Kunde inte spara kreditnotans kommentar."
 "The creditmemo contains product item that is not part of the original order.","Kreditnotan innehåller artiklar som inte var med i den ursprungliga beställningen."
+"You can't create a creditmemo without products.","Du kan inte skapa en kreditnota utan produkter."
 "We cannot register an existing invoice","Vi kan inte registrera en befintlig faktura"
 "We can't create creditmemo for the invoice.","Vi kan inte skapa kreditnota för fakturan."
 "Order Id is required for invoice document","Beställnings-id krävs för fakturadokumentet"
